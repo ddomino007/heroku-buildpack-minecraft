@@ -99,8 +99,8 @@ phosphor_url=${PHOSPHOR_URL:-"https://github.com/CaffeineMC/phosphor-fabric/rele
 
 echo -n "-----> Installing Fabric mods ... "
 mkdir $BUILD_DIR/mods
-curl -o lithium.jar -s -L $lithium_url
-mv lithium.jar $BUILD_DIR/mods/lithium.jar
+# curl -o lithium.jar -s -L $lithium_url
+# mv lithium.jar $BUILD_DIR/mods/lithium.jar
 curl -o phosphor.jar -s -L $phosphor_url
 mv phosphor.jar $BUILD_DIR/mods/phosphor.jar
 echo "done"
