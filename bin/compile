@@ -91,7 +91,7 @@ fabric_url="https://maven.fabricmc.net/net/fabricmc/fabric-installer/${fabric_ve
 
 echo -n "-----> Installing Fabric ${fabric_version}... "
 curl -o fabric-installer.jar -s -L $fabric_url
-java -jar fabric-installer.jar server -loader "$fabric_version" -dir "$BUILD_DIR"
+java -jar fabric-installer.jar server -mcversion "$minecraft_version" -dir "$BUILD_DIR"
 echo "done"
 
 
