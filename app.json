@@ -1,10 +1,7 @@
 {
   "name": "Minecraft",
   "description": "A Minecraft Server on Heroku",
-  "keywords": [
-    "games",
-    "minecraft"
-  ],
+  "keywords": ["games", "minecraft"],
   "repository": "https://github.com/jkutner/heroku-buildpack-minecraft",
   "env": {
     "MINECRAFT_EULA": {
@@ -14,6 +11,10 @@
     "NGROK_API_TOKEN": {
       "description": "Your personal ngrok API token",
       "required": true
+    },
+    "NGROK_OPTS": {
+      "description": "Custom ngrok options",
+      "required": false
     },
     "AWS_BUCKET": {
       "description": "S3 Bucket to store your server state (you will lose your games when the server restarts if you don't do this)",
